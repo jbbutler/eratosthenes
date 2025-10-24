@@ -1,7 +1,5 @@
 from sievetools import *
 import pytest
-import matplotlib.pyplot as plt
-from matplotlib.testing.decorators import image_comparison
 
 def test_slow_inits():
     assert sieve_slow(10) == [2, 3, 5, 7]
