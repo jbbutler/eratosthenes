@@ -1,7 +1,16 @@
+'''
+This is my sievetools module!
+'''
+
 import sys
 import math
 import numpy as np
 
+<<<<<<< HEAD
+=======
+# a small comment
+
+>>>>>>> b6ce34b209f904a465703d64a20cfd599792bab2
 def sieve_slow(nmax):
     """
     Function to compute prime numbers. 
@@ -17,11 +26,21 @@ def sieve_slow(nmax):
     all_primes = []
 
     if nmax == 1:
+<<<<<<< HEAD
         return []
     elif nmax == 2: 
         return [2]
     elif not isinstance(nmax, int):
         raise TypeError('Input must be integer.')
+=======
+        return all_primes
+
+    elif nmax < 1:
+        raise ValueError('Must be a nonnegative integer.')
+
+    elif nmax == 2: 
+        all_primes = [2]
+>>>>>>> b6ce34b209f904a465703d64a20cfd599792bab2
     else:
         primes_head = [2]
         first = 3
@@ -44,7 +63,7 @@ def sieve_fast(nmax):
     Function to compute prime numbers in a more efficient way than sieve_slow()
     
     Arguments: 
-        - nmax: integer. Upper bound for prime search.
+        - nmax: positive integer. Upper bound for prime search.
 
     Ourputs:
         - all_primes: list. List with all the prime numbers slower than nmax   
@@ -53,7 +72,13 @@ def sieve_fast(nmax):
     
     all_primes = []
 
-    if nmax == 2: 
+    if nmax == 1:
+        return []
+
+    elif nmax < 1:
+        raise ValueError('nmax cannot be less than 1')
+
+    elif nmax == 2: 
         all_primes = [2]
 
     else:

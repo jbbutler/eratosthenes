@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 numpy==1.23
+=======
+numpy==1.23
+matplotlib
+>>>>>>> b6ce34b209f904a465703d64a20cfd599792bab2
