@@ -18,7 +18,13 @@ def sieve_slow(nmax):
 
     all_primes = []
 
-    if nmax == 2: 
+    if nmax == 1:
+        return all_primes
+
+    elif nmax < 1:
+        raise ValueError('Must be a nonnegative integer.')
+
+    elif nmax == 2: 
         all_primes = [2]
     else:
         primes_head = [2]
