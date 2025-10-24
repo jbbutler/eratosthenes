@@ -6,11 +6,6 @@ import sys
 import math
 import numpy as np
 
-<<<<<<< HEAD
-=======
-# a small comment
-
->>>>>>> b6ce34b209f904a465703d64a20cfd599792bab2
 def sieve_slow(nmax):
     """
     Function to compute prime numbers. 
@@ -26,21 +21,12 @@ def sieve_slow(nmax):
     all_primes = []
 
     if nmax == 1:
-<<<<<<< HEAD
         return []
     elif nmax == 2: 
         return [2]
     elif not isinstance(nmax, int):
         raise TypeError('Input must be integer.')
-=======
-        return all_primes
 
-    elif nmax < 1:
-        raise ValueError('Must be a nonnegative integer.')
-
-    elif nmax == 2: 
-        all_primes = [2]
->>>>>>> b6ce34b209f904a465703d64a20cfd599792bab2
     else:
         primes_head = [2]
         first = 3
